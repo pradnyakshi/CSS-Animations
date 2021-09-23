@@ -10,21 +10,30 @@ body{
 }
 .bar{
     display: block;
-    height: 200px;
-    width: 20px;
+    height: 100px;
+    width: 10px;
     background-color: #ffffff;
-    margin: 12px;
+    margin: 22px;
     box-shadow: 2px 2px 2px #48b6e0;
-    animation: scale 1500ms ease infinite;
+    animation: scale 1400ms ease infinite;
     transform-origin: 50% 50%;
+}
+.one{
     animation-delay: 100ms;
+}
+.two{
+    animation-delay: 400ms;
+}
+.three{
+    animation-delay: 700ms;
 }
 @keyframes scale{
     0%{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.1);
+        transform: scale(2);
+        box-shadow: 4px 4px 12px #48b6e0;
     }
     100%{
         transform : scale(1);
