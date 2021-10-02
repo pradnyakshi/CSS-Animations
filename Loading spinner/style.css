@@ -1,0 +1,17 @@
+.loading{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-top-color: rgb(216 ,30, 214);
+    animation: loading 1s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
