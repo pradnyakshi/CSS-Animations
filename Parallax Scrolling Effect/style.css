@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+}
+.parallax1{
+    background-image: url(./img1.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.parallax2{
+    background-image: url(./img2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+h2{
+    background: #fff;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
