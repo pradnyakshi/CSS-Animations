@@ -1,0 +1,48 @@
+body{
+    background: black;
+}
+div{
+    position: relative;
+    display: flex;
+    height: 4rem;
+    width: 20rem;
+    border-radius: 4rem;
+    border: 0;
+    background-color: white;
+    margin: 10rem auto;
+}
+span{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 6rem;
+    border-radius: inherit;
+    font-size: 0.875rem;
+    background: #3a8ced;
+    color: white;
+    pointer-events: none;
+    transition: all 0.35s;
+}
+input{
+    flex: 1 1 auto;
+    padding-left: 6.5rem;
+    border: 0;
+    height: inherit;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    text-indent: 0.625rem;
+    transition: all 0.35s;
+}
+input::placeholder{
+    color: #9b9ba5;
+}
+input:focus{
+    transform: translateX(-6rem);
+}
+input:focus ~ span{
+    transform: translateY(-4rem);
+}

@@ -1,0 +1,48 @@
+div{
+    position: relative;
+    display: flex;
+    height: 4rem;
+    width: 20rem;
+}
+.label,.label-sm{
+    position: absolute;
+    top: 50%;
+    color: #7b7684;
+    pointer-events: none;
+    transition: all 0.35s;
+}
+.label{
+    left: 0;
+    transform: translate(0,-50%);
+}
+.label-sm{
+    right: 0;
+    transform: translate(3rem,-50%);
+    width: 6rem;
+    font-size: 0.75rem;
+    text-align: right;
+    opacity: 0;
+}
+input{
+    height: inherit;
+    width: 16rem;
+    border: 0;
+    border-bottom: 2px solid #7f7979;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1rem;
+    transition: all 0.35s;
+}
+input:focus{
+    border-bottom-color: rgb(13, 122, 13);
+}
+input:focus ~ .label{
+    opacity: 0;
+    transform: translate(-3rem,50%);
+}
+input:focus ~ .label-sm{
+    opacity: 1;
+    transform: translate(0,-50%);
+}
